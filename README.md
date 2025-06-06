@@ -152,11 +152,39 @@ FROM Airline_Data
 GROUP BY 
   CASE WHEN Arrival_Delay > 15 THEN 'Delayed' ELSE 'On Time' END,
   Satisfaction;
+```
 
 ---
 ### Key Business Questions and Insights
-1. How does satisfaction vary across Gender, Age, and Class of Travel?
-- Gender Insights: 
+### Passengers Satisfaction Across Demographics
+1. How does satisfaction vary across Gender, Age, and Customer Type?
+- Gender Insights: Female passengers showed slightly higher satisfaction levels than male passengers.
+
+- Age Group Insights:  Passengers aged 41–60 reported the highest satisfaction levels, while those aged 60 and above showed notably lower satisfaction.
+
+- Customer Type: Loyal customers (frequent fliers) consistently showed higher satisfaction than disloyal or first-time travelers.
+
+### Recommendations
+ Introduce comfort-driven services for senior passengers, such as priority assistance and better seat options. Focus marketing campaigns on the 41–60 age segment who are already more satisfied.
+ 
+-  Loyalty Program Optimization: Invest in loyalty schemes. Reward frequent flyers with points, upgrades, or perks to retain high value customers.
+
+-  Targeted Marketing: Customize campaigns for middle aged travelers and loyal customers, as they are your most satisfied segments. For younger passengers, offer personalized travel experiences (e.g., digital check ins, entertainment features).
+
+2. Impact of Travel Type and Class on Satisfaction
+Insight: Business class and business travel recorded the highest satisfaction scores. In contrast, Economy plus class passengers, especially those on personal  trips, were notably less satisfied.
+
+Implication: Higher paying customers are experiencing better services, while the bulk of passengers (Economy class) feel underserved.
+
+### Recommendation:
+
+- Service Rebalancing: Improve Economy class experience. Enhance seat comfort, food service, and boarding experience.
+
+- Value Up Promotions: Offer bundled upgrades (e.g., priority boarding + extra legroom) for Economy passengers to improve perception at a reasonable cost.
+
+3. 
+
+
 
 
   
