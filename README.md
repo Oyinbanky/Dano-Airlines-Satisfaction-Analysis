@@ -12,7 +12,7 @@ SQL Server
     
 Power BI
   - Calculated Columns
-  - DAX
+  - DAX calculations
   - Data Modeling
   - Data Visualization
     
@@ -21,4 +21,32 @@ GITHUB
 
 ---
 ### Dataset Description
+ The goal of this project is to analyze customer satisfaction data from over 120,000 passengers and uncover the key drivers influencing satisfaction and dissatisfaction. Based on the findings, strategic recommendations will be made to help Dano Airlines enhance the overall passenger experience and improve their satisfaction score.
  
+ The dataset includes responses from passengers and covers variables such as:
+
+- Demographics (e.g., Gender, Age)
+
+- Flight characteristics (e.g., Class, Distance, Delays)
+
+- Service ratings (e.g., Online Booking, In-flight Service, Food & Drink)
+
+- Overall Satisfaction
+
+---
+### Key Questions Explored
+
+- How does satisfaction vary by gender, age, class, and type of travel?
+
+- What impact do delays have on passenger satisfaction?
+
+- Which in-flight services are most strongly associated with dissatisfaction?
+
+- What KPIs should Dano Airlines track to monitor improvement?
+  
+- Service Rating Performance
+
+---
+### Dashboard
+
+
