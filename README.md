@@ -49,4 +49,121 @@ GITHUB
 ---
 ### Dashboard
 
+Here's a visual overview of the Dano Airlines passenger satisfaction dashboard:
+
+![Dano Airlines Dashboard](./Dano_Airlines_Dashboard.png)
+
+---
+###SQL Queries
+1) ### Satisfaction by Gender
+```
+SELECT Gender, Satisfaction, COUNT(*) AS Count
+FROM Airline_Data
+GROUP BY Gender, Satisfaction;
+```
+2) ### Satisfaction by Age Group
+```
+SELECT 
+  CASE 
+    WHEN Age < 20 THEN 'Under 20'
+    WHEN Age BETWEEN 20 AND 34 THEN '20–34'
+    WHEN Age BETWEEN 35 AND 49 THEN '35–49'
+    WHEN Age BETWEEN 50 AND 64 THEN '50–64'
+    ELSE '65+' 
+  END AS AgeGroup,
+  Satisfaction,
+  COUNT(*) AS Count
+FROM Airline_Data
+GROUP BY 
+  CASE 
+    WHEN Age < 20 THEN 'Under 20'
+    WHEN Age BETWEEN 20 AND 34 THEN '20–34'
+    WHEN Age BETWEEN 35 AND 49 THEN '35–49'
+    WHEN Age BETWEEN 50 AND 64 THEN '50–64'
+    ELSE '65+' 
+  END,
+  Satisfaction;
+```
+
+3) ### Satisfactio by Type of Travel
+  ```
+ SELECT Type_of_Travel, Satisfaction, COUNT(*) AS Count
+FROM Airline_Data
+GROUP BY Type_of_Travel, Satisfaction;
+```
+
+4) ### Satisfaction by Class
+```
+SELECT Class, Satisfaction, COUNT(*) AS Count
+FROM Airline_Data
+GROUP BY Class, Satisfaction;
+```
+
+5) ### Satisfaction by Flight Distance Category
+```
+SELECT 
+  CASE 
+    WHEN Flight_Distance < 500 THEN '<500 km'
+    WHEN Flight_Distance BETWEEN 500 AND 1500 THEN '500–1500 km'
+    ELSE '>1500 km' 
+  END AS DistanceCategory,
+  Satisfaction,
+  COUNT(*) AS Count
+FROM Airline_Data
+GROUP BY 
+  CASE 
+    WHEN Flight_Distance < 500 THEN '<500 km'
+    WHEN Flight_Distance BETWEEN 500 AND 1500 THEN '500–1500 km'
+    ELSE '>1500 km' 
+  END,
+  Satisfaction;
+```
+
+6) ### Satisfaction by Departure Delay
+```
+SELECT 
+  CASE WHEN Departure_Delay > 15 THEN 'Delayed' ELSE 'On Time' END AS DepartureStatus,
+  Satisfaction,
+  COUNT(*) AS Count
+FROM Airline_Data
+GROUP BY 
+  CASE WHEN Departure_Delay > 15 THEN 'Delayed' ELSE 'On Time' END,
+  Satisfaction;
+```
+ 7) ### Satisfaction by Arrival Delay
+ ```
+SELECT 
+  CASE WHEN Arrival_Delay > 15 THEN 'Delayed' ELSE 'On Time' END AS ArrivalStatus,
+  Satisfaction,
+  COUNT(*) AS Count
+FROM Airline_Data
+GROUP BY 
+  CASE WHEN Arrival_Delay > 15 THEN 'Delayed' ELSE 'On Time' END,
+  Satisfaction;
+```
+
+8) ### Average Ratings of Services
+```
+SELECT 
+  CASE WHEN Arrival_Delay > 15 THEN 'Delayed' ELSE 'On Time' END AS ArrivalStatus,
+  Satisfaction,
+  COUNT(*) AS Count
+FROM Airline_Data
+GROUP BY 
+  CASE WHEN Arrival_Delay > 15 THEN 'Delayed' ELSE 'On Time' END,
+  Satisfaction;
+
+---
+### Key Business Questions and Insights
+1. How does satisfaction vary across Gender, Age, and Class of Travel?
+- Gender Insights: 
+
+
+  
+
+
+
+
+
+
 
