@@ -59,7 +59,7 @@ GITHUB
 
 - What impact do delays have on passenger satisfaction?
 
-- Which in-flight services are most strongly associated with dissatisfaction?
+- Which in flight services are most strongly associated with dissatisfaction?
 
 - What KPIs should Dano Airlines track to monitor improvement?
   
@@ -181,7 +181,7 @@ GROUP BY
 
 - Age Group Insights:  Passengers aged 41–60 reported the highest satisfaction levels, while those aged 60 and above showed notably lower satisfaction.
 
-- Customer Type: Loyal customers (frequent fliers) consistently showed higher satisfaction than disloyal or first-time travelers.
+- Customer Type: Loyal customers (frequent fliers) consistently showed higher satisfaction than disloyal or first time travelers.
 
 ### Recommendations
  Introduce comfort-driven services for senior passengers, such as priority assistance and better seat options. Focus marketing campaigns on the 41–60 age segment who are already more satisfied.
@@ -244,7 +244,7 @@ For Short Flights (under 500 km):
 
 - Highlight the comfort, meals, and in flight services in your marketing.
 
-- Show potential customers that they’ll be well taken care of—this is attractive to business travelers and long-distance tourists.
+- Show potential customers that they’ll be well taken care of this is attractive to business travelers and long distance tourists.
 
 - Maintain or improve service quality to retain loyalty.
 
